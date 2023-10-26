@@ -8,7 +8,7 @@ number_2 = randint(1, 100)
 
 print('Find the greatest common divisor of given numbers.')
 print(f"Question: {number_1} {number_2}")
-user_answer = prompt.iteger('Your answer: ')
+user_answer = prompt.integer('Your answer: ')
 
 
 def make_list_1(number_1):

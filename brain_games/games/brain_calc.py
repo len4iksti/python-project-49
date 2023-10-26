@@ -8,7 +8,7 @@ number_2 = randint(1, 100)
 operator = choice(['+', '-', '*'])
 
 
-def calculat(number_1, operator, number_2):
+def calculate_expression(number_1, operator, number_2):
     if operator == '+':
         return number_1 + number_2
     elif operator == '-':
@@ -23,7 +23,7 @@ print('What is the result of the expression?')
 print(f"Question: {number_1} {operator} {number_2}")
 
 
-right_answer = calculat(number_1, operator, number_2)
+right_answer = calculate_expression(number_1, operator, number_2)
 user_answer = prompt.integer('Your answer: ')
 
 if user_answer == right_answer:
