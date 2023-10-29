@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "My first Hexlet project"
 authors = ["Елена Бенедиктова <len4iksti@mail.ru>"]
 readme = "README.md"
 packages = [
@@ -11,6 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
+prompt = "^0.4.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -23,6 +24,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.games.brain_even:main"
-brain-calc = "brain_games.scripts.games.brain_calc:main"
-brain-gcd = "brain_games.scripts.games.brain_gcd:main"
+brain-even = "brain_games.scripts.launch_even:main"
+brain-calc = "brain_games.scripts.launch_calc:main"
+brain-gcd = "brain_games.scripts.launch_gcd:main"
+brain-progression = "brain_games.scripts.launch_progression:main"
+brain-prime = "brain_games.scripts.launch_prime:main"

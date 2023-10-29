@@ -1,32 +1,24 @@
-import prompt
-
-from random import randint, choice
+import random
 
 
-number_1 = randint(1, 100)
-number_2 = randint(1, 100)
-operator = choice(['+', '-', '*'])
+GAME_RULE = 'What is the result of the expression?'
 
 
-def calculate_expression(number_1, operator, number_2):
-    if operator == '+':
+def calculate_expression(number_1: int, random_operator: str, number_2: int):
+    if random_operator == '+':
         return number_1 + number_2
-    elif operator == '-':
+
+    if random_operator == '-':
         return number_1 - number_2
-    else:
-        return number_1 * number_2
+
+    return number_1 * number_2
 
 
-print('What is the result of the expression?')
-
-
-print(f"Question: {number_1} {operator} {number_2}")
-
-
-right_answer = calculate_expression(number_1, operator, number_2)
-user_answer = prompt.integer('Your answer: ')
-
-if user_answer == right_answer:
-    print('Correct!')
-else:
-    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+def get_game():
+    number_1 = random.randint(1, 100)
+    number_2 = random.randint(1, 100)
+    operator = ['+', '-', '*']
+    random_operator = random.choice(operator)
+    right_answer = calculate_expression()
+    question = f'{number_1} {random_operator} {number_2}'
+    return question, right_answer
