@@ -3,6 +3,7 @@ import random
 
 GAME_RULE = 'What number is missing in the progression?'
 
+
 def is_progression():
     first_number = random.randint(1, 20)
     progression = [first_number]
@@ -16,7 +17,6 @@ def is_progression():
     return progression
 
 
-
 def get_game():
     progression = is_progression()
     answer = random.choice(progression)
@@ -25,6 +25,6 @@ def get_game():
     progression[index] = '..'
 
     question = ' '.join(map(str, progression))
-    correct_answer = str(answer)
+    right_answer = str(answer)
 
-    return question, correct_answer
+    return question, right_answer

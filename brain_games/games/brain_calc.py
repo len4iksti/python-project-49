@@ -2,6 +2,7 @@ import random
 
 
 GAME_RULE = 'What is the result of the expression?'
+OPERATOR = ['+', '-', '*']
 
 
 def calculate_expression(number_1: int, random_operator: str, number_2: int):
@@ -17,8 +18,7 @@ def calculate_expression(number_1: int, random_operator: str, number_2: int):
 def get_game():
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
-    operator = ['+', '-', '*']
-    random_operator = random.choice(operator)
-    right_answer = calculate_expression()
+    random_operator = random.choice(OPERATOR)
+    right_answer = calculate_expression(number_1, random_operator, number_2)
     question = f'{number_1} {random_operator} {number_2}'
     return question, right_answer

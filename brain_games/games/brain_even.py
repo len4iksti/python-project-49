@@ -3,15 +3,15 @@ import random
 
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-random_number = random.randint(1, 100)
 
 def is_even(random_number):
     return random_number % 2 == 0
 
+
 def get_game():
-    right_answer = is_even()
+    random_number = random.randint(1, 100)
     question = f'{random_number}'
-    if is_even():
+    if is_even(random_number):
         right_answer = 'yes'
     else:
         right_answer = 'no'
