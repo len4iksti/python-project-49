@@ -15,10 +15,11 @@ def launch_game(game):
         question, right_answer = game.get_game()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
+        error_message = ' is wrong answer ;(. Correct answer was '
 
         if user_answer == str(right_answer):
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+            print(f"'{user_answer}{error_message}{right_answer}'.")
             return print(f"Let's try again, {name}!")
     return print(f'Congratulations, {name}!')
