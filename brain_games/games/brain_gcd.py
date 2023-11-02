@@ -2,7 +2,6 @@ import random
 
 from math import gcd
 
-
 GAME_RULE = 'Find the greatest common divisor of given numbers.'
 
 

@@ -1,6 +1,5 @@
 import random
 
-
 GAME_RULE = 'What is the result of the expression?'
 OPERATOR = ['+', '-', '*']
 

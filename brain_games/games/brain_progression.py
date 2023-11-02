@@ -1,6 +1,5 @@
 import random
 
-
 GAME_RULE = 'What number is missing in the progression?'
 
 
