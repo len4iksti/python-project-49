@@ -14,6 +14,9 @@ How to install:
 
 git clone https://github.com/len4iksti/python-project-49.git
 cd python-project-49
+make install
+make build
+make publish
 make package-install
 
 Description:
