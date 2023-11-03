@@ -8,6 +8,8 @@ This is my first project as a Python Developer at the Hexlet online school.
 Language: Python
 Version: ^3.9
 
+Poetry ^1.6
+
 Added libraries: random, prompt, math
 
 How to install:
